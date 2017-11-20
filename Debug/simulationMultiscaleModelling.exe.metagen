@@ -1,0 +1,64 @@
+  simulationMultiscaleModelling.MyForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly simulationMultiscaleModelling, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class simulationMultiscaleModelling.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 rowTable : Public
+    Int32 colTable : Public
+    Int32** table : Public
+    Int32** tmpTable : Public
+    Int32** tableGB : Public
+    Int32* tablePhase : Public
+    Int32 nucleonRow : Public
+    Int32 nucleonCol : Public
+    Int32 amountNucleon : Public
+    Int32 amountInclusions : Public
+    Int32 sizeInclusions : Public
+    Int32 idNucleon : Public
+    Int32 gbSize : Public
+    System.String xSizeValueFromTextBox : Public
+    System.String ySizeValueFromTextBox : Public
+    System.String amoutNucleonFromDomianUpDown : Public
+    System.String amountOfInclusionsFromTextBox : Public
+    System.String sizeOfInclusionsFromTextBox : Public
+    System.String typeOfInclusionFromComboBox : Public
+    System.String neighborhoodMethoodFromComboBox : Public
+    System.String grainsSelectedFromComboBox : Public
+    System.String gbSizeFromTextBox : Public
+    System.String gbAmountFromTextBox : Public
+    System.String structureFromComboBox : Public
+    System.String amountGrainFromDomainUpDown : Public
+    System.Windows.Forms.DomainUpDown domainUpDown : Public
+    System.Drawing.Graphics board : Public
+    System.Drawing.Bitmap image1 : Public
+    Boolean tableIsExist : Public
+  Methods:
+    createTable(Int32, Int32): PrivateScope, Public, HideBySig
+    deleteTable(Int32, Int32): PrivateScope, Public, HideBySig
+    randPositionXNucleon(): PrivateScope, Public, HideBySig
+    randPositionYNucleon(): PrivateScope, Public, HideBySig
+    drawNucleon(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    checkNeighbors(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    checkNeighborsVonNeumann(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    checkNeighborsMoore(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    growNucleons(): PrivateScope, Public, HideBySig
+    saveMicrostrure(): PrivateScope, Public, HideBySig
+    saveMicrostrureBMP(): PrivateScope, Public, HideBySig
+    loadFile(): PrivateScope, Public, HideBySig
+    loadFileBitmap(): PrivateScope, Public, HideBySig
+    drawInclusions(Int32, String, Int32, Int32): PrivateScope, Public, HideBySig
